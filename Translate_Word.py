@@ -22,7 +22,6 @@ import csv
 def translate():
     word = input("Please Enter your word : ")
     dest_lang = input("Please Enter your required language : ")
-    Translator(service_urls = 'https://translate.google.co.in/')
     output = translator.translate(word, dest=dest_lang) 
     return output.text 
 
