@@ -20,7 +20,7 @@ import csv
 ## Defining function for translation the word from one language to another.
 
 def translate():
-    word = input("Please Enter your word : ").split(',')
+    word = input("Please Enter your word : ")
     dest_lang = input("Please Enter your required language : ")
     Translator(service_urls = 'https://translate.google.co.in/')
     output = translator.translate(word, dest=dest_lang) 
